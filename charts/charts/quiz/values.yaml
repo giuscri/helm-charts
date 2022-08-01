@@ -11,9 +11,9 @@ image:
   # tag: ""
 
 postgresConfig:
-  host:     postgres
-  user:     postgres
-  password: password
+  host:     ""
+  user:     ""
+  password: ""
 
 imagePullSecrets: []
 nameOverride: ""
