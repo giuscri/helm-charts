@@ -34,10 +34,12 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
-            {{- range $key, $value := .Values.env }}
-            - name: {{ $key }}
-              value: {{ $value }}
-            {{- end }}
+            - name: PGHOST
+              value: {{ required "" .Values.postgresConfig.host }}
+            - name: PGUSER
+              value: {{ required "" .Values.postgresConfig.user }}
+            - name: PGPASSWORD
+              value: {{ required "" .Values.postgresConfig.password }}
           ports:
             - name: http
               containerPort: 8000
