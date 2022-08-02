@@ -40,6 +40,8 @@ spec:
               value: {{ required "You must provide postgresConfig.user" .Values.postgresConfig.user }}
             - name: PGPASSWORD
               value: {{ required "You must provide postgresConfig.password" .Values.postgresConfig.password }}
+            - name: SENTRY_DSN
+              value: {{ .Values.sentryDsn }}
           ports:
             - name: http
               containerPort: 8000
