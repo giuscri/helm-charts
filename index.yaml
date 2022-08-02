@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   quiz:
   - apiVersion: v2
+    appVersion: 0.2.15
+    created: "2022-08-02T08:26:34.872425956Z"
+    description: A Helm chart for Kubernetes
+    digest: b8669843fd5fdf7664de61bdd48229ff9a177cf2fb3e71786bb89768abd1f6bd
+    name: quiz
+    type: application
+    urls:
+    - https://github.com/giuscri/helm-charts/releases/download/quiz-0.2.15/quiz-0.2.15.tgz
+    version: 0.2.15
+  - apiVersion: v2
     appVersion: 0.2.14
     created: "2022-08-02T07:47:00.595405462Z"
     description: A Helm chart for Kubernetes
@@ -109,4 +119,4 @@ entries:
     urls:
     - https://github.com/giuscri/helm-charts/releases/download/quiz-0.0.0/quiz-0.0.0.tgz
     version: 0.0.0
-generated: "2022-08-02T07:47:00.595445362Z"
+generated: "2022-08-02T08:26:34.872496855Z"
