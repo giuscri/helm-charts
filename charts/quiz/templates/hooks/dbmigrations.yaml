@@ -25,7 +25,7 @@ spec:
         args:
           - -path=/app/migrations
           - -database
-          - postgres://$(PGUSER):$(PGPASSWORD)@$(PGHOST):5432?sslmode=disable
+          - postgres://$(PGUSER):$(PGPASSWORD)@$(PGHOST):5432/quiz?sslmode=disable
           - up
         env:
           - name: PGHOST
