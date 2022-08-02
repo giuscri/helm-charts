@@ -22,7 +22,7 @@ spec:
       containers:
       - name: {{ .Chart.Name }}-migrations
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}-dbmigrations"
-        command:
+        args:
           - -path=/app/migrations
           - -database
           - postgres://${PGUSER}:${PGPASSWORD}@${PGHOST}:5432?sslmode=disable
