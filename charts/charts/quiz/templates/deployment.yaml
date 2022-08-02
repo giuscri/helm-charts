@@ -46,7 +46,7 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /healthz
+              path: /
               port: http
           readinessProbe:
             httpGet:
