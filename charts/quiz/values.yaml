@@ -10,6 +10,11 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   # tag: ""
 
+postgresConfig:
+  host:     "postgres"
+  user:     "postgres"
+  password: ""
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
